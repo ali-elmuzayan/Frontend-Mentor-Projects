@@ -8,12 +8,12 @@ function App() {
     summaries.reduce((acc, curr) => acc + curr.score, 0) / summaries.length
   );
   return (
-    <div className="min-h-screen bg-gray-100 sm:flex sm:items-center sm:justify-center ">
+    <main className="min-h-screen bg-gray-100 sm:flex sm:items-center sm:justify-center ">
       <div className="h-min-screen sm:max-w-xl mx-auto bg-white sm:flex sm:rounded-3xl  shadow-lg overflow-hidden">
         <ResultsHeader avgScore={avgScore} score={score} />
         <ResultsBody summaries={summaries} />
       </div>
-    </div>
+    </main>
   );
 }
 
