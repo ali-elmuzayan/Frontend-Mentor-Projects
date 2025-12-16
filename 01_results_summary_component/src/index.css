@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-light-slate-blue: hsl(252, 100%, 67%);
+  --color-light-royal-blue: hsl(241, 81%, 54%);
+  --color-violet-blue: hsla(256, 72%, 46%, 1);
+  --color-persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+@layer utilities {
+  .bg-primary-gradient {
+    @apply from-light-slate-blue to-light-royal-blue;
+  }
+  
+  .bg-circle-gradient {
+    @apply from-violet-blue to-persian-blue;
+  }
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
